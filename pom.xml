@@ -6,6 +6,25 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pages Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<scm>
+		<connection>scm:git@github.com:ishaqsha/ecommerce.git</connection>
+		<developerConnection>scm:git:git@github.com:ishaqsha/ecommerce.git</developerConnection>
+		<url>git@git@github.com:ishaqsha/ecommerce.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+    		<repository>
+        		<id>central</id>
+        		<name>ip-172-31-3-1.ap-southeast-2.compute.internal-releases</name>
+        		<url>http://3.25.70.243:8081/artifactory/Maven_Sample</url>
+    		</repository>
+    		<snapshotRepository>
+        		<id>snapshots</id>
+        		<name>ip-172-31-3-1.ap-southeast-2.compute.internal-snapshots</name>
+        		<url>http://3.25.70.243:8081/artifactory/Maven_Sample</url>
+    			</snapshotRepository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
