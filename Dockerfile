@@ -9,6 +9,9 @@ RUN apt-get update && \
     fontconfig \
     openjdk-11-jre \
     && rm -rf /var/lib/apt/lists/*
-
+# Create a directory for my application
+WORKDIR /app
+# Copy the JAR file into the image
+COPY target/shopieasy-0.0.1-SNAPSHOT.war /app/shopieasy-0.0.1-SNAPSHOT.war
 # Start Jenkins
-CMD ["java", "-jar", "target/shopieasy-0.0.1-SNAPSHOT.war"]
+CMD ["java", "-jar", "shopieasy-0.0.1-SNAPSHOT.war"]
