@@ -113,8 +113,4 @@ Contributors are most welcome.
 
 
 
-file edting 
-syed rizwan syed shafeeque 
-momin pura gujri bazzar 
-parbhani
 
